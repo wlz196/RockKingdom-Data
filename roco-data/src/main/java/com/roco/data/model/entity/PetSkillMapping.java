@@ -44,6 +44,7 @@ public class PetSkillMapping implements Serializable {
             case 0: return "自学";
             case 1: return "技能石";
             case 2: return "血脉";
+            case 4: return "传说技能";
             default: return "其他";
         }
     }

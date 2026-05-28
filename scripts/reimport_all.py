@@ -249,14 +249,13 @@ def reimport_pets(cursor):
             boss_to_base_name[bid_int] = f"{pet.get('name')}({pet.get('form')})" if pet.get('form') else pet.get('name')
 
     data_to_insert = []
-    has_book_id = set()
+    official_pet_ids = {} # (name, form, book_id) -> min_id
     candidates = []
     for sid, pet in rows.items():
         if pet.get("SUM_race", 0) <= 0: continue
         name = pet.get("name", "未知")
         form = boss_to_base_name.get(int(sid), "首领") if pet.get("is_boss") == 1 else pet.get("form")
         book_id = pet.get("pictorial_book_id", 0)
-        if book_id > 0: has_book_id.add((name, form))
         u_types = pet.get("unit_type", [])
         evo_ids = pet.get("evolution_pet_id", [])
         boss_id_arry = pet.get("bosspetbase_id_arry", [])
@@ -277,11 +276,22 @@ def reimport_pets(cursor):
             boss_id_arry[0] if boss_id_arry else pet.get("bosspetbase_id"),
             is_official
         )
-        candidates.append({"record": record, "name": name, "form": form, "book_id": book_id})
+        candidates.append({"record": record, "name": name, "form": form, "book_id": book_id, "id": int(sid)})
+        if book_id > 0:
+            k = (name, form, book_id)
+            if k not in official_pet_ids or int(sid) < official_pet_ids[k]:
+                official_pet_ids[k] = int(sid)
+
+    has_book_id = set((k[0], k[1]) for k in official_pet_ids.keys())
 
     insert_count = 0
     for c in candidates:
-        if c["book_id"] == 0 and (c["name"], c["form"]) in has_book_id: continue
+        if c["book_id"] > 0:
+            if c["id"] != official_pet_ids[(c["name"], c["form"], c["book_id"])]:
+                continue
+        else:
+            if (c["name"], c["form"]) in has_book_id:
+                continue
         data_to_insert.append(c["record"])
         insert_count += 1
 

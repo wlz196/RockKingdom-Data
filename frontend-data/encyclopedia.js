@@ -869,6 +869,11 @@ async function showDetail(id) {
                     <button class="tab-link active" onclick="switchTab(event, 'skill-self')">
                         <i class="fas fa-book"></i> <span>自学</span>
                     </button>
+                    ${d.skills['传说技能'] && d.skills['传说技能'].length > 0 ? `
+                    <button class="tab-link" onclick="switchTab(event, 'skill-legendary')" style="color:#d4af37; font-weight:bold; text-shadow: 0 0 5px rgba(212, 175, 55, 0.5);">
+                        <i class="fas fa-crown"></i> <span>传说技能</span>
+                    </button>
+                    ` : ''}
                     <button class="tab-link" onclick="switchTab(event, 'skill-stone')">
                         <i class="fas fa-gem"></i> <span>技能石</span>
                     </button>
@@ -880,6 +885,9 @@ async function showDetail(id) {
                     </button>
                 </div>
                 <div id="skill-self" class="tab-content">${renderSkillsList(d.skills['自学'])}</div>
+                ${d.skills['传说技能'] && d.skills['传说技能'].length > 0 ? `
+                <div id="skill-legendary" class="tab-content" style="display:none; border: 1px solid #d4af37; border-radius: 8px; box-shadow: inset 0 0 15px rgba(212,175,55,0.1);">${renderSkillsList(d.skills['传说技能'])}</div>
+                ` : ''}
                 <div id="skill-stone" class="tab-content" style="display:none">${renderSkillsList(d.skills['技能石'])}</div>
                 <div id="skill-bloodline" class="tab-content" style="display:none">${renderSkillsList(d.skills['血脉'])}</div>
                 <div id="skill-common" class="tab-content" style="display:none">${renderSkillsList(d.skills['常用'] || [])}</div>

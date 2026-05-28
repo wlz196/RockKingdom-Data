@@ -333,7 +333,7 @@ public class DataController {
                 map.put("imageUrl", dataService.formatImageUrl(rs.getString("image_url"), rs.getString("name")));
                 map.put("isOfficial", rs.getInt("is_official"));
                 int source = rs.getInt("source");
-                map.put("source", source == 0 ? "自学" : source == 1 ? "技能石" : source == 2 ? "血脉" : "特性");
+                map.put("source", source == 0 ? "自学" : source == 1 ? "技能石" : source == 2 ? "血脉" : source == 4 ? "传说技能" : "特性");
                 return map;
             }, id);
         result.put("learners", learners);

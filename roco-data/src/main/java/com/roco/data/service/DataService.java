@@ -115,6 +115,7 @@ public class DataService {
         categorizedSkills.put("自学", new ArrayList<>());
         categorizedSkills.put("技能石", new ArrayList<>());
         categorizedSkills.put("血脉", new ArrayList<>());
+        categorizedSkills.put("传说技能", new ArrayList<>());
 
         for (PetSkillMapping m : mappings) {
             String source = m.getSourceType();
