@@ -1,7 +1,9 @@
 import json
 import sqlite3
 import os
+import sys
 
+sys.stdout.reconfigure(encoding='utf-8')
 # 配置路径
 DB_PATH = "roco_encyclopedia.db"
 PET_JSON = "json_data/PETBASE_CONF.json"
