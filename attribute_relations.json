@@ -1,0 +1,709 @@
+{
+  "types": [
+    {
+      "id": 1,
+      "name": "无系别",
+      "short_name": "无",
+      "icon_url": null,
+      "color": "#CEF7FFFF"
+    },
+    {
+      "id": 2,
+      "name": "普通系",
+      "short_name": "普通",
+      "icon_url": null,
+      "color": "#CEF7FFFF"
+    },
+    {
+      "id": 3,
+      "name": "草系",
+      "short_name": "草",
+      "icon_url": null,
+      "color": "#70ECA0FF"
+    },
+    {
+      "id": 4,
+      "name": "火系",
+      "short_name": "火",
+      "icon_url": null,
+      "color": "#FF7B7AFF"
+    },
+    {
+      "id": 5,
+      "name": "水系",
+      "short_name": "水",
+      "icon_url": null,
+      "color": "#51BCFFFF"
+    },
+    {
+      "id": 6,
+      "name": "光系",
+      "short_name": "光",
+      "icon_url": null,
+      "color": "#FFE071FF"
+    },
+    {
+      "id": 8,
+      "name": "地系",
+      "short_name": "地",
+      "icon_url": null,
+      "color": "#FFBF7CFF"
+    },
+    {
+      "id": 9,
+      "name": "冰系",
+      "short_name": "冰",
+      "icon_url": null,
+      "color": null
+    },
+    {
+      "id": 10,
+      "name": "龙系",
+      "short_name": "龙",
+      "icon_url": null,
+      "color": null
+    },
+    {
+      "id": 11,
+      "name": "电系",
+      "short_name": "电",
+      "icon_url": null,
+      "color": null
+    },
+    {
+      "id": 12,
+      "name": "毒系",
+      "short_name": "毒",
+      "icon_url": null,
+      "color": null
+    },
+    {
+      "id": 13,
+      "name": "虫系",
+      "short_name": "虫",
+      "icon_url": null,
+      "color": "#D0FF7BFF"
+    },
+    {
+      "id": 14,
+      "name": "武系",
+      "short_name": "武",
+      "icon_url": null,
+      "color": null
+    },
+    {
+      "id": 15,
+      "name": "翼系",
+      "short_name": "翼",
+      "icon_url": null,
+      "color": "#79FFE3FF"
+    },
+    {
+      "id": 16,
+      "name": "萌系",
+      "short_name": "萌",
+      "icon_url": null,
+      "color": null
+    },
+    {
+      "id": 17,
+      "name": "幽系",
+      "short_name": "幽",
+      "icon_url": null,
+      "color": "#7C80FFFF"
+    },
+    {
+      "id": 18,
+      "name": "恶系",
+      "short_name": "恶",
+      "icon_url": null,
+      "color": "#AA57FFFF"
+    },
+    {
+      "id": 19,
+      "name": "机械系",
+      "short_name": "机械",
+      "icon_url": null,
+      "color": null
+    },
+    {
+      "id": 20,
+      "name": "幻系",
+      "short_name": "幻",
+      "icon_url": null,
+      "color": null
+    }
+  ],
+  "relations": [
+    {
+      "attacker_id": 1,
+      "defender_id": 9,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 2,
+      "defender_id": 8,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 2,
+      "defender_id": 17,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 2,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 4,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 5,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 6,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 8,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 10,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 12,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 13,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 15,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 3,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 4,
+      "defender_id": 3,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 4,
+      "defender_id": 5,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 4,
+      "defender_id": 8,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 4,
+      "defender_id": 9,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 4,
+      "defender_id": 10,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 4,
+      "defender_id": 13,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 4,
+      "defender_id": 19,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 5,
+      "defender_id": 3,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 5,
+      "defender_id": 4,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 5,
+      "defender_id": 8,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 5,
+      "defender_id": 9,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 5,
+      "defender_id": 10,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 5,
+      "defender_id": 19,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 6,
+      "defender_id": 3,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 6,
+      "defender_id": 9,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 6,
+      "defender_id": 17,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 6,
+      "defender_id": 18,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 8,
+      "defender_id": 3,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 8,
+      "defender_id": 4,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 8,
+      "defender_id": 9,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 8,
+      "defender_id": 11,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 8,
+      "defender_id": 12,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 8,
+      "defender_id": 14,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 9,
+      "defender_id": 3,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 9,
+      "defender_id": 4,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 9,
+      "defender_id": 8,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 9,
+      "defender_id": 9,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 9,
+      "defender_id": 10,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 9,
+      "defender_id": 15,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 9,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 10,
+      "defender_id": 10,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 10,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 11,
+      "defender_id": 3,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 11,
+      "defender_id": 5,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 11,
+      "defender_id": 8,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 11,
+      "defender_id": 10,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 11,
+      "defender_id": 11,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 11,
+      "defender_id": 15,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 12,
+      "defender_id": 3,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 12,
+      "defender_id": 8,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 12,
+      "defender_id": 12,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 12,
+      "defender_id": 16,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 12,
+      "defender_id": 17,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 12,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 3,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 4,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 12,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 14,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 15,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 16,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 17,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 18,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 13,
+      "defender_id": 20,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 2,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 8,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 9,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 12,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 13,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 15,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 16,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 17,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 18,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 19,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 14,
+      "defender_id": 20,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 15,
+      "defender_id": 3,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 15,
+      "defender_id": 8,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 15,
+      "defender_id": 10,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 15,
+      "defender_id": 11,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 15,
+      "defender_id": 13,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 15,
+      "defender_id": 14,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 15,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 16,
+      "defender_id": 4,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 16,
+      "defender_id": 10,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 16,
+      "defender_id": 12,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 16,
+      "defender_id": 14,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 16,
+      "defender_id": 18,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 16,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 17,
+      "defender_id": 2,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 17,
+      "defender_id": 6,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 17,
+      "defender_id": 17,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 17,
+      "defender_id": 18,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 17,
+      "defender_id": 20,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 18,
+      "defender_id": 6,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 18,
+      "defender_id": 12,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 18,
+      "defender_id": 14,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 18,
+      "defender_id": 16,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 18,
+      "defender_id": 17,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 18,
+      "defender_id": 18,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 19,
+      "defender_id": 4,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 19,
+      "defender_id": 5,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 19,
+      "defender_id": 8,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 19,
+      "defender_id": 9,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 19,
+      "defender_id": 11,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 19,
+      "defender_id": 16,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 19,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 20,
+      "defender_id": 6,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 20,
+      "defender_id": 12,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 20,
+      "defender_id": 14,
+      "multiplier": 1
+    },
+    {
+      "attacker_id": 20,
+      "defender_id": 19,
+      "multiplier": -1
+    },
+    {
+      "attacker_id": 20,
+      "defender_id": 20,
+      "multiplier": -1
+    }
+  ]
+}
