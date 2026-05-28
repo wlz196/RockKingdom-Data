@@ -3,7 +3,7 @@ import sqlite3
 import os
 
 DB_PATH = "roco_encyclopedia.db"
-JSON_PATH = "PET_LIKE_ELEMENT_ID_NAME_DESC.json"
+JSON_PATH = "json_data/PET_LIKE_ELEMENT_ID_NAME_DESC.json"
 
 def import_egg_groups():
     if not os.path.exists(JSON_PATH):

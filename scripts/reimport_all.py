@@ -4,9 +4,9 @@ import os
 
 # 配置路径
 DB_PATH = "roco_encyclopedia.db"
-PET_JSON = "PETBASE_CONF.json"
-SKILL_JSON = "SKILL_CONF.json"
-LEVEL_SKILL_JSON = "LEVEL_SKILL_CONF.json"
+PET_JSON = "json_data/PETBASE_CONF.json"
+SKILL_JSON = "json_data/SKILL_CONF.json"
+LEVEL_SKILL_JSON = "json_data/LEVEL_SKILL_CONF.json"
 
 def reimport_all():
     if not all(os.path.exists(p) for p in [PET_JSON, SKILL_JSON, LEVEL_SKILL_JSON]):
