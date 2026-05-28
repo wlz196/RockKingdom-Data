@@ -325,6 +325,10 @@ def reimport_level_skills(cursor):
         for key, val in pet_skills.items():
             if key.startswith("blood_skill_") and key != "blood_skill_level_point" and val:
                 batch.append((pet_id, p_name, pet_id, int(val), 2, -1, -1, key.replace("blood_skill_", ""), ""))
+                
+        # 传说技能 (source=4)
+        if pet_skills.get("legendary_skill"):
+            batch.append((pet_id, p_name, pet_id, int(pet_skills["legendary_skill"]), 4, -1, -1, "", ""))
 
     cursor.executemany("INSERT OR REPLACE INTO pet_level_skills VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)", batch)
     print(f"✅ 技能关联导入完成: {len(batch)} 条记录")
